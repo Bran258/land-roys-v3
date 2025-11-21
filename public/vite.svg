@@ -1,0 +1,22 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="300" height="300" fill="#0D0D0D"/>
+
+        <path d="M100 20 L200 20 L220 150 L200 280 L100 280 L80 150 Z" fill="#1A1A1A" stroke="#C99A45" stroke-width="2"/>
+
+        <path d="M105 25 L195 25 L210 150 L195 275 L105 275 L90 150 Z" fill="#222222"/>
+
+        <g transform="translate(150, 160)">
+                <path d="M-50 -30 L 0 20 L 50 -30 L 40 -20 L 0 10 L -40 -20 Z" fill="#C99A45"/>
+                <rect x="-1" y="-50" width="2" height="100" fill="#BBBBBB"/>
+                <circle cx="0" cy="0" r="10" fill="#C99A45"/>
+        <circle cx="0" cy="0" r="4" fill="#0D0D0D"/>
+    </g>
+
+        <text x="150" y="80" font-family="Verdana, Geneva, sans-serif" font-size="28" font-weight="300" fill="#F0F0F0" text-anchor="middle" letter-spacing="10">LAND ROYS</text>
+
+        <line x1="110" y1="100" x2="190" y2="100" stroke="#C99A45" stroke-width="1"/>
+
+        <text x="150" y="120" font-family="Verdana, Geneva, sans-serif" font-size="14" fill="#C99A45" text-anchor="middle" letter-spacing="5">MOTORCYCLES</text>
+
+        <text x="150" y="260" font-family="Verdana, Geneva, sans-serif" font-size="10" fill="#BBBBBB" text-anchor="middle" letter-spacing="3">SINCE 2024</text>
+</svg>
