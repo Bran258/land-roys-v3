@@ -51,7 +51,8 @@ const Header = () => {
         <nav className="mobile-menu">
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/motos" onClick={() => setIsOpen(false)}>Motos</Link>
-          <Link to="/parts" onClick={() => setIsOpen(false)}>Repuestos</Link>
+          <Link to="/repuestos" onClick={() => setIsOpen(false)}>Repuestos</Link>
+          <Link to="/parts" onClick={() => setIsOpen(false)}>Descuentos</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Nosotros</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contacto</Link>
         </nav>
