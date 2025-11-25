@@ -25,9 +25,9 @@ const Header = () => {
           <Link to="/">Home</Link>
           <Link to="/motos">Motos</Link>
           <Link to="/repuestos">Repuestos</Link>
-          <Link to="/parts">Descuentos</Link>
-          <Link to="/contact">Nosotros</Link>
-          <Link to="/contact">Contacto</Link>
+          <Link to="/descuentos">Descuentos</Link>
+          <Link to="/nosotros">Nosotros</Link>
+          <Link to="/contacto">Contacto</Link>
         </nav>
 
         {/* Botones */}
@@ -52,9 +52,9 @@ const Header = () => {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/motos" onClick={() => setIsOpen(false)}>Motos</Link>
           <Link to="/repuestos" onClick={() => setIsOpen(false)}>Repuestos</Link>
-          <Link to="/parts" onClick={() => setIsOpen(false)}>Descuentos</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Nosotros</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contacto</Link>
+          <Link to="/descuentos" onClick={() => setIsOpen(false)}>Descuentos</Link>
+          <Link to="/nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link>
+          <Link to="/contacto" onClick={() => setIsOpen(false)}>Contacto</Link>
         </nav>
       )}
 
