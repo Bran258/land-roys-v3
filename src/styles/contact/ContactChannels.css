@@ -1,0 +1,93 @@
+.contact-channels {
+  padding: 40px 24px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.channels-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 24px;
+}
+
+.channels-badge {
+  display: inline-block;
+  background: #f1f5ff;
+  color: #204ecf;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.channels-header h2 {
+  margin: 12px 0 8px;
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  color: #0f172a;
+}
+
+.channels-header p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.channel-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.channel-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #fef2f2;
+  color: #e60000;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+}
+
+.channel-info h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.channel-detail {
+  margin: 4px 0;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.channel-description {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.channel-action {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  color: #e60000;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.channel-card:hover .channel-action {
+  color: #c30000;
+}
