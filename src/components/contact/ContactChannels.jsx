@@ -208,10 +208,7 @@ const ContactChannels = () => {
       <div className="contact-map">
         <div className="contact-map__header">
           <span className="channels-badge">Mapa interactivo de Perú</span>
-          <p>
-            El mapa interactivo de Perú ahora ocupa el 80% del ancho en el lado derecho mostrando los puntos de venta de
-            Land Roys, mientras que el panel izquierdo (20%) detalla el punto seleccionado.
-          </p>
+
         </div>
 
         <div className="contact-map__layout">

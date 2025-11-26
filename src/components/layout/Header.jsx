@@ -32,7 +32,20 @@ const Header = () => {
 
         {/* Botones */}
         <div className="header-buttons">
-          <button className="btn-test-drive">Consulta</button>
+          <Link
+            className="btn-test-drive"
+            to="/contacto#contact-form"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.replace("/contacto#tmp");
+              setTimeout(() => {
+                window.location.replace("/contacto#contact-form");
+              }, 10);
+            }}
+          >
+            Consulta
+          </Link>
+
 
           {/* ICONO DE MENÚ MÓVIL */}
           <button className="btn-menu" onClick={() => setIsOpen(!isOpen)}>
