@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../pages/home/Home";
-
+import Contact from "../pages/contact/Contact";
 
 import LayoutCatalogoMotos from "../layout/LayoutCatalogoMotos";
 import LayoutRepuestos from "../layout/LayoutRepuestos";
-
 
 import CatalogoMotos from "../pages/catalogoMotos/CatalogoMotos";
 import Repuestos from "../pages/repuestos/Repuestos";
@@ -16,6 +15,7 @@ const AppRoutes = () => {
             {/* Layout general */}
             <Route element={<Layout />}>
                 <Route path="/" element={<Home />} />
+                <Route path="/contacto" element={<Contact />} />
             </Route>
 
             {/* Layout exclusivo con sidebar de catálogo */}

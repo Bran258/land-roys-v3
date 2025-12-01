@@ -1,0 +1,169 @@
+.contact-map {
+  margin-top: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-map__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.contact-map__header p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+.contact-map__layout {
+  display: grid;
+  grid-template-columns: 0.9fr 3.6fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.contact-map__sidebar {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-label {
+  margin: 0;
+  color: #6366f1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 0.85rem;
+}
+
+.sidebar-title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.1rem;
+}
+
+.sidebar-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.sidebar-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-address {
+  margin: 0;
+  font-weight: 700;
+  color: #111827;
+}
+
+.sidebar-meta {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.sidebar-link {
+  margin-top: 4px;
+  color: #e60000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sidebar-list {
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+}
+
+.sidebar-list__title {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.sidebar-list__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sidebar-chip {
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-chip.is-active {
+  background: #e60000;
+  border-color: #e60000;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(230, 0, 0, 0.15);
+}
+
+.sidebar-chip:hover {
+  transform: translateY(-1px);
+}
+
+.contact-map__canvas {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .contact-map__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map__canvas {
+    height: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-map {
+    padding: 12px;
+  }
+
+  .sidebar-image {
+    height: 100px;
+  }
+}

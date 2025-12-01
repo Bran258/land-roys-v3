@@ -25,14 +25,27 @@ const Header = () => {
           <Link to="/">Home</Link>
           <Link to="/motos">Motos</Link>
           <Link to="/repuestos">Repuestos</Link>
-          <Link to="/parts">Descuentos</Link>
-          <Link to="/contact">Nosotros</Link>
-          <Link to="/contact">Contacto</Link>
+          <Link to="/descuentos">Descuentos</Link>
+          <Link to="/nosotros">Nosotros</Link>
+          <Link to="/contacto">Contacto</Link>
         </nav>
 
         {/* Botones */}
         <div className="header-buttons">
-          <button className="btn-test-drive">Consulta</button>
+          <Link
+            className="btn-test-drive"
+            to="/contacto#contact-form"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.replace("/contacto#tmp");
+              setTimeout(() => {
+                window.location.replace("/contacto#contact-form");
+              }, 10);
+            }}
+          >
+            Consulta
+          </Link>
+
 
           {/* ICONO DE MENÚ MÓVIL */}
           <button className="btn-menu" onClick={() => setIsOpen(!isOpen)}>
@@ -52,9 +65,9 @@ const Header = () => {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/motos" onClick={() => setIsOpen(false)}>Motos</Link>
           <Link to="/repuestos" onClick={() => setIsOpen(false)}>Repuestos</Link>
-          <Link to="/parts" onClick={() => setIsOpen(false)}>Descuentos</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Nosotros</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contacto</Link>
+          <Link to="/descuentos" onClick={() => setIsOpen(false)}>Descuentos</Link>
+          <Link to="/nosotros" onClick={() => setIsOpen(false)}>Nosotros</Link>
+          <Link to="/contacto" onClick={() => setIsOpen(false)}>Contacto</Link>
         </nav>
       )}
 
