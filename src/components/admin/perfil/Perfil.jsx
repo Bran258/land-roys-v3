@@ -9,7 +9,7 @@ import {
   FiLock,
 } from "react-icons/fi";
 import { usePerfil } from "../../../hooks/usePerfil";
-import "./perfil.css";
+import "./Perfil.css";
 import Loading from "../../ui/Loading";
 
 const Perfil = () => {
