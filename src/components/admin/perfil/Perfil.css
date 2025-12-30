@@ -1,0 +1,230 @@
+:root {
+  --perfil-blanco: #ffffff;
+  --perfil-naranja: #ff7a00;
+  --perfil-rojo: #e60023;
+  --perfil-azul: #0066ff;
+  --perfil-azul-hover: #004fcc;
+  --perfil-gris-claro: #f5f7fa;
+  --perfil-gris-texto: #4a4a4a;
+  --perfil-borde: #e3e6ea;
+  --perfil-shadow: rgba(0, 0, 0, 0.06);
+  --perfil-shadow-strong: rgba(0, 0, 0, 0.12);
+  --perfil-radius: 18px;
+  --perfil-trans: 0.25s ease;
+}
+
+/* -----------------------------------------------------
+   CONTENEDOR GENERAL
+----------------------------------------------------- */
+.perfil-container {
+  padding: 40px 20px;
+  background: var(--perfil-gris-claro);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* -----------------------------------------------------
+   TARJETAS
+----------------------------------------------------- */
+.card-perfil {
+  background: var(--perfil-blanco);
+  border-radius: var(--perfil-radius);
+  padding: 28px;
+  box-shadow: 0 4px 20px var(--perfil-shadow);
+  transition: var(--perfil-trans);
+}
+
+.card-perfil:hover {
+  box-shadow: 0 6px 28px var(--perfil-shadow-strong);
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------------------------
+   TITULOS
+----------------------------------------------------- */
+.titulo-perfil {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--perfil-azul);
+}
+
+/* -----------------------------------------------------
+   AVATAR
+----------------------------------------------------- */
+.avatar-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 14px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--perfil-blanco);
+  box-shadow: 0 4px 10px var(--perfil-shadow);
+}
+
+.btn-cambiar-foto {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: var(--perfil-azul);
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--perfil-trans);
+  font-size: 1rem;
+}
+
+.btn-cambiar-foto:hover {
+  background: var(--perfil-azul-hover);
+  transform: scale(1.05);
+}
+
+/* -----------------------------------------------------
+   NOMBRE Y ROL
+----------------------------------------------------- */
+.nombre-perfil {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.rol-perfil {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--perfil-naranja);
+  font-weight: 600;
+}
+
+/* -----------------------------------------------------
+   DIVIDER
+----------------------------------------------------- */
+.divider {
+  margin: 20px 0;
+  height: 1px;
+  background: var(--perfil-borde);
+}
+
+/* -----------------------------------------------------
+   INFORMACIÓN DE CONTACTO
+----------------------------------------------------- */
+.info-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--perfil-gris-texto);
+}
+
+.icono {
+  color: var(--perfil-azul);
+  font-size: 1.2rem;
+}
+
+/* -----------------------------------------------------
+   FORMULARIOS
+----------------------------------------------------- */
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--perfil-azul);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--perfil-radius);
+  border: 1px solid var(--perfil-borde);
+  background: #fff;
+  font-size: 0.95rem;
+  color: #333;
+  outline: none;
+  transition: var(--perfil-trans);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--perfil-azul);
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
+}
+
+/* -----------------------------------------------------
+   BOTONES
+----------------------------------------------------- */
+.acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.btn-cancelar {
+  padding: 12px 22px;
+  background: #fff;
+  border-radius: var(--perfil-radius);
+  border: 1px solid var(--perfil-borde);
+  cursor: pointer;
+  transition: var(--perfil-trans);
+  font-weight: 600;
+}
+
+.btn-cancelar:hover {
+  background: #f0f0f0;
+}
+
+.btn-guardar {
+  padding: 12px 22px;
+  background: var(--perfil-azul);
+  color: #fff;
+  border-radius: var(--perfil-radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 102, 255, 0.25);
+  transition: var(--perfil-trans);
+}
+
+.btn-guardar:hover {
+  background: var(--perfil-azul-hover);
+  transform: translateY(-2px);
+}
